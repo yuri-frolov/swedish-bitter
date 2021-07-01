@@ -1,0 +1,56 @@
+$lightgreen: #adc48e;
+
+.factoids {
+    margin-top: 40px;
+}
+
+.factoids__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+
+.factoids__item {
+    display: flex;
+    max-width: 248px;
+}
+
+.factoids__left-wrapper {
+    margin-right: 16px;
+}
+
+.factoids__left-wrapper img {
+    min-width: 25px;
+}
+
+.factoids__right-wrapper {
+    padding-top: 28px;
+}
+
+.factoids__item-number {
+    display: inline-block;
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: $lightgreen;
+    border-bottom: 3px solid $lightgreen;
+}
+
+.factoids__item-number > span {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.factoids__item-description {
+    margin-top: 19px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+    .factoids {
+    margin-top: 100px;
+    }
+
+}
