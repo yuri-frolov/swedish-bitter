@@ -1,0 +1,122 @@
+.atf {
+
+}
+
+.atf .container {
+    background: url(../img/background.jpg) center top no-repeat;
+}
+
+.atf__text-wrapper {
+    padding-top: 142px;
+    color: #fff;
+}
+
+.atf__top-text {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.atf__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.atf__bottom-text {
+    font-size: 1.125rem;
+    line-height: 1.25;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atf__bottom {
+    margin-top: 40px;
+}
+
+.atf__image {
+    width: 60.90%;
+    max-width: 237px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atf__btn {
+    margin-top: 40px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .atf__text-wrapper {
+        width: 50.05%;// как у кнопки atf__btn
+        margin-left: auto;
+    }
+
+    .atf__top-text {
+        text-align: left;
+    }
+
+    .atf__title {
+        text-align: left;
+    }
+
+    .atf__bottom-text {
+        margin-left: 0;
+    }
+
+    .atf__bottom {
+        display: flex;
+        align-items: flex-end;
+        
+        margin-top: -285px;
+    }
+
+    .atf__image {
+        margin-left: 0;
+    }
+
+    .atf__btn {
+        max-width: 468px;
+        min-width: 50.05%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .atf__text-wrapper {
+        width: 500px;
+        padding-top: 182px;
+    }
+
+    .atf__title {
+        font-size: 3.437rem;
+    }
+
+    .atf__bottom-text {
+        font-size: 1rem;
+    }
+
+    .atf__bottom {
+        margin-top: -249px;
+    }
+
+    .atf__image {
+        max-width: 297px;
+        margin-left: 130px;
+    }
+
+    .atf__btn {
+        min-width: 0px;
+        max-width: 500px;
+        width: 500px;
+    }
+}

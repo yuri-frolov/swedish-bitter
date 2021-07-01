@@ -15,6 +15,13 @@ $grey:  #999999;
 }
 
 @media screen and (max-width: 767px) {
+    .header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
     .header .container__inner {
         display: flex;
     }
@@ -33,6 +40,11 @@ $grey:  #999999;
 
 
 @media screen and (min-width: 768px) {
+
+    .header {
+        padding-bottom: 26px;
+    }
+
     .header .container__inner {
         display: flex;
         justify-content: space-between;

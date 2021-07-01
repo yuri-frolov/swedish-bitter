@@ -81,6 +81,15 @@ BODY > * > * > * > * {
     outline-offset: -4px;
 }
 
+BODY > * > * > * > * > * {
+    outline: 2px dotted rgb(30, 255, 68);
+    outline-offset: -4px;
+}
+
+BODY {
+  opacity: .5;
+}
+
 HTML {
     background: url('../img/page-mobile.png') 50% 0 no-repeat;
 }
@@ -95,17 +104,13 @@ HTML {
     HTML {
       background-image: url('../img/page-desktop-1.png');
     }
-  }
+}
 
 @media (min-width: 1920px) {
     HTML {
       background-image: url('../img/page-desktop-2.png');
     }
-  }
-
-  BODY {
-    opacity: .5;
-  }
+}
 //
 
 .flex {
