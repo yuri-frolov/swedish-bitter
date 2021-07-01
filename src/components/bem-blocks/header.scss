@@ -1,0 +1,48 @@
+$black: #333333;
+$grey:  #999999;
+
+.header {
+    padding-top: 26px;
+}
+
+.header__logo-wrapper {
+    display: none;
+}
+
+.header__number-wrapper {
+    display: block;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .header .container__inner {
+        display: flex;
+    }
+
+    .header__number-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header__number-wrapper .phone__number,
+    .header__number-wrapper .phone__number-tip {
+        color: #fff;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header .container__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 20px;
+    }
+}

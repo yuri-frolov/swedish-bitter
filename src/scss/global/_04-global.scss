@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 100%;
 }
 
 *,
@@ -13,9 +13,19 @@ html,
 body {
 	height: 100%;
 	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 
-body {}
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
 
 ul,
 ol,
@@ -30,6 +40,14 @@ h6 {
 	margin: 0;
 }
 
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
 button:focus,
 input:focus {
 	outline: transparent;
@@ -38,6 +56,57 @@ input:focus {
 button {
 	@include no-btn;
 }
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+///DEBUG
+BODY > * > * {
+    outline: 2px solid deeppink;
+}
+
+BODY > * > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+
+BODY > * > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
+
+HTML {
+    background: url('../img/page-mobile.png') 50% 0 no-repeat;
+}
+
+@media (min-width: 768px) {
+	HTML {
+		background-image: url('../img/page-tablet.png');
+	}
+}
+
+@media (min-width: 1200px) {
+    HTML {
+      background-image: url('../img/page-desktop-1.png');
+    }
+  }
+
+@media (min-width: 1920px) {
+    HTML {
+      background-image: url('../img/page-desktop-2.png');
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+//
 
 .flex {
 	display: flex;

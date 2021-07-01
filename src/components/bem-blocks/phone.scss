@@ -1,0 +1,26 @@
+$black: #333333;
+$grey:  #999999;
+
+.phone__number {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+    &:before {
+        content: url('../img/phone.svg');
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}
+.phone__number-tip {
+    font-size: 1em;
+    text-align: right;
+}
+
+.phone__number {
+    color: $black;
+}
+
+.phone__number-tip {
+    color: $grey;
+    }
