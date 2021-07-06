@@ -1,0 +1,71 @@
+$extra-lightgreen: #f7f9f3;
+
+.sympthoms {
+
+}
+
+.sympthoms .container-content {
+    background-color: $extra-lightgreen;
+}
+
+.sympthoms .col-1,
+.sympthoms .col-2 {
+    max-width: 594px;
+    margin: 0 auto;
+}
+
+.sympthoms__image {
+    display: none;
+}
+
+.sympthoms__title {
+    font-size: 1.875rem;
+    line-height: 1.25;
+    max-width: 350px;
+
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .sympthoms__title {
+        margin-left: 73px;
+        margin-bottom: 38px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sympthoms .container-content .container__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .sympthoms__title {
+        max-width: 450px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .sympthoms .col-1,
+    .sympthoms .col-2 {
+        margin: 0;
+    }
+
+    .sympthoms .col-2 {
+        width: 500px;
+        position: sticky;
+        top: 0;
+        margin-top: -74px;
+    }
+
+    .sympthoms__image {
+        display: block;
+        width: 500px;
+        height: 689px;
+        background: url(../img/skeleton.jpg) center no-repeat;
+    }
+
+    .sympthoms__btn {
+        margin-top: 20px;
+    }
+}
