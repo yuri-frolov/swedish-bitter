@@ -1,0 +1,172 @@
+$lightgreen: #adc48e;
+$extra-lightgreen: #f7f9f3;
+
+.bonuses.section {
+    margin-top: 227px;
+}
+
+.bonuses .container {
+    position: relative;
+}
+
+.bonuses .container__inner:first-child {
+    margin-bottom: 40px;
+}
+
+.bonuses__title {
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bonuses__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.bonuses__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid $lightgreen;
+}
+
+.bonuses__item:nth-child(1) {
+    &::before {
+        content: '01';
+        font-size: 150px;
+        font-weight: 900;
+        color: $extra-lightgreen;
+        margin-top: 46px;
+    }
+    
+    &::after {
+        content: url(../img/herbals.svg);
+        position: absolute;
+        top: 94px;
+    }
+}
+
+.bonuses__item:nth-child(2) {
+    &::before {
+        content: '02';
+        font-size: 150px;
+        font-weight: 900;
+        color: $extra-lightgreen;
+        margin-top: 46px;
+    }
+    
+    &::after {
+        content: url(../img/book.svg);
+        position: absolute;
+        top: 94px;
+    }
+}
+
+.bonuses__item:nth-child(3) {
+    &::before {
+        content: '03';
+        font-size: 150px;
+        font-weight: 900;
+        color: $extra-lightgreen;
+        margin-top: 46px;
+    }
+    
+    &::after {
+        content: url(../img/sertificate.svg);
+        position: absolute;
+        top: 94px;
+    }
+}
+
+.bonuses__item-text {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+    .bonuses.section {
+        margin-top: 152px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bonuses.section {
+        margin-top: 250px;
+    }
+
+    .bonuses__title {
+        max-width: 600px;
+    }
+
+    .bonuses__list {
+        //толкает айтемы чтобы снизу был отступ
+        margin-bottom: 85px;
+    }
+
+    .bonuses__item {
+        width: 370px;
+        height: 370px;
+    }
+
+    .bonuses__item:nth-child(1) {
+        &::before {
+            margin-top: 60px;
+        }
+
+        &::after {
+            top: 107px;
+        }
+    }
+
+    .bonuses__item:nth-child(2) {
+        &::before {
+            margin-top: 58px;
+        }
+        &::after {
+            top: 107px;
+        }
+    }
+
+    .bonuses__item:nth-child(3) {
+        &::before {
+            margin-top: 60px;
+        }
+        &::after {
+            top: 107px;
+        }
+    }
+
+    .bonuses__item-text {
+        font-size: 1.25rem;
+        margin-bottom: 106px;
+    }
+
+    .bonuses .container {
+    //background
+        padding-bottom: 85px;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            width: 100%;
+            height: 460px;
+            background-color: $extra-lightgreen;
+        }
+    }
+}

@@ -34,7 +34,7 @@ $lightgreen: #adc48e;
 .factoids__item-number {
     display: inline-block;
     font-size: 1.875rem;
-    font-weight: 800;
+    font-weight: 700;
     color: $lightgreen;
     border-bottom: 3px solid $lightgreen;
 }
@@ -62,7 +62,11 @@ $lightgreen: #adc48e;
 
 @media screen and (min-width: 1200px) {
     .factoids {
-    margin-top: 100px;
+        margin-top: 100px;
+    }
+
+    .factoids__item:not(:last-child) {
+        margin-bottom: 0;
     }
 
 }
