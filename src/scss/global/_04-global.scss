@@ -67,7 +67,7 @@ a {
 }
 
 ///DEBUG
-BODY > * > * {
+/* BODY > * > * {
     outline: 2px solid deeppink;
 }
 
@@ -86,8 +86,17 @@ BODY > * > * > * > * > * {
     outline-offset: -4px;
 }
 
+BODY > * > * > * > * > * > * {
+    outline: 2px solid deeppink;
+}
+
+BODY > * > * > * > * > * > * > * {
+    outline: 2px solid rgb(3, 238, 255);
+    outline-offset: -2px;
+}
+
 BODY {
-  opacity: .5;
+  opacity: .7;
 }
 
 HTML {
@@ -110,7 +119,7 @@ HTML {
     HTML {
       background-image: url('../img/page-desktop-2.png');
     }
-}
+} */
 //
 
 .flex {

@@ -1,0 +1,125 @@
+$green: #8eb059;
+
+.advantages .container__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages .col-1 {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.advantages__title {
+    font-size: 1.875rem;
+    line-height: 1.25;
+}
+
+.advantages__text {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.advantages__list {
+
+}
+
+.advantages__list-item {
+    display: flex;
+    align-items: center;
+    line-height: 1.25;
+    max-width: 480px;
+}
+
+.advantages__list-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.advantages__list-item:before {
+    content: url(../img/list__item-arrow.svg);
+    margin-right: 22px;
+}
+//////////////////
+.advantages .col-2 {
+    margin-top: 40px;
+}
+
+.advantages__cta {
+    background: url(../img/section-image.jpg) right center no-repeat;
+    min-height: 645px;
+    max-width: 594px;
+
+    display: flex;
+}
+
+.advantages__cta-block {
+    background-color: #fff;
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: auto;
+    margin-bottom: -148px;
+}
+
+.advantages__cta-block-wrapper {
+    border: 1px solid $green;
+}
+
+.advantages__cta-text {
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-right: 29px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.advantages__cta-btn {
+
+}
+
+@media screen and (min-width: 768px) {
+    .advantages__title {
+        margin-top: 33px;
+    }
+
+    .advantages__cta {
+        padding: 0px 15px;
+        background: url(../img/section-image.jpg) center center no-repeat;
+    }
+
+    .advantages__cta-block {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: -52px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages .container__inner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    } 
+
+    .advantages .col-1 {
+        margin-top: 40px;
+    } 
+    
+    .advantages .col-2 {
+        margin-top: 40px;
+        margin-right: 55px;
+    }
+
+    .advantages__text {
+        margin-top: 38px;
+        margin-bottom: 41px;
+    }
+
+    .advantages__title {
+      margin-top: 0;
+    }
+}

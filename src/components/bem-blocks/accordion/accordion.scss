@@ -3,7 +3,6 @@ $extra-lightgreen: #f7f9f3;
 $line-green: #e8eedf;
 
 .accordion__button {
-  background-color: transparent;
   color: #000;
   cursor: pointer;
   padding: 30px 0;
@@ -11,7 +10,10 @@ $line-green: #e8eedf;
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
+  transition: 0.2s;
+  &:hover {
+    background-color: $line-green;
+  }
 }
 
 .accordion__panel {
