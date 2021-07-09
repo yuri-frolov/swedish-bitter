@@ -1,0 +1,31 @@
+$green: #8eb059;
+
+.cta {
+    background-color: #fff;
+    padding: 15px;
+    &--labelled {
+        
+    }
+}
+
+.cta__wrapper {
+    position: relative;
+    border: 1px solid $green;
+}
+
+.cta__label {
+    position: absolute;
+    top: -10px;
+    left: 38px;
+
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fff;
+    color: $green;
+}
+
+.cta__text {
+    line-height: 1.5;
+}
+

@@ -48,7 +48,7 @@ $green: #8eb059;
     margin-top: 40px;
 }
 
-.advantages__cta {
+.advantages__cta-wrapper {
     background: url(../img/section-image.jpg) right center no-repeat;
     min-height: 645px;
     max-width: 594px;
@@ -56,28 +56,25 @@ $green: #8eb059;
     display: flex;
 }
 
-.advantages__cta-block {
-    background-color: #fff;
-    padding: 15px;
+.advantages__cta {
     margin-left: -15px;
     margin-right: -15px;
     margin-top: auto;
     margin-bottom: -148px;
 }
 
-.advantages__cta-block-wrapper {
+.cta__wrapper {
     border: 1px solid $green;
 }
 
-.advantages__cta-text {
-    line-height: 1.5;
+.advantages__cta .cta__text {
     margin-top: 30px;
     margin-right: 29px;
     margin-bottom: 30px;
     margin-left: 30px;
 }
 
-.advantages__cta-btn {
+.cta__btn {
 
 }
 
@@ -86,12 +83,12 @@ $green: #8eb059;
         margin-top: 33px;
     }
 
-    .advantages__cta {
+    .advantages__cta-wrapper {
         padding: 0px 15px;
         background: url(../img/section-image.jpg) center center no-repeat;
     }
 
-    .advantages__cta-block {
+    .advantages__cta {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: -52px;

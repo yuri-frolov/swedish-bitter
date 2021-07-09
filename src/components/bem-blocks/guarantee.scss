@@ -1,0 +1,132 @@
+$extra-lightgreen: #f7f9f3;
+
+.guarantee.section {
+    margin-top: 78px;
+}
+
+.guarantee .container:nth-child(2) {
+    position: relative;
+}
+
+.guarantee .container:nth-child(2) .container__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .container:nth-child(2) .container__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.guarantee__background {
+    display: none;
+}
+
+.guarantee__text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.5;
+
+    max-width: 544px;
+    margin-top: 41px;
+    margin-bottom: 33px;
+}
+
+.guarantee__cta {
+    max-width: 594px;
+}
+
+.guarantee__cta .cta__text {
+    margin-top: 31px;
+    margin-right: 29px;
+    margin-bottom: 30px;
+    margin-left: 29px;
+}
+
+.guarantee__cta .cta__wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media screen and (min-width: 768px) {
+    .guarantee.section {
+        margin-top: 105px;
+    }
+    
+    .guarantee__img {
+        width: 594px;
+    }
+
+    .guarantee__text {
+        font-size: 1rem;
+        margin-top: 38px;
+        margin-bottom: 38px;
+
+    }
+
+    .guarantee__cta .cta__wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .guarantee__cta .cta__text {
+        margin-top: 31px;
+        margin-bottom: 28px;
+    }
+    
+    .guarantee__cta .cta__btn {
+        max-width: 370px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .guarantee.section {
+        margin-top: 321px;
+    }
+
+   .guarantee .container:nth-child(2) .container__inner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    } 
+
+    .guarantee__title {
+        text-align: left;
+    }
+
+    .guarantee__img {
+        position: absolute;
+        bottom: -4px;
+        right: 15px;
+        max-width: 416px;
+    }
+
+    .guarantee .container:nth-child(2) .container__inner-wrapper {
+        margin-right: auto;
+        align-items: flex-start;
+    }
+
+    .guarantee__text {
+        margin-top: 40px;
+        margin-bottom: 26px;
+    }
+
+    .guarantee__background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 478px;
+        background-color: $extra-lightgreen;
+    }
+}
