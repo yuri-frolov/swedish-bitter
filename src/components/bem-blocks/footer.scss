@@ -1,7 +1,7 @@
 $grey:  #999999;
 
 .footer {
-    margin-top: 80px;
+    margin-top: 64px;
     padding-bottom: 80px;
 }
 
@@ -20,7 +20,7 @@ $grey:  #999999;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
 }
 
 .footer__link {
@@ -30,7 +30,7 @@ $grey:  #999999;
 
 @media screen and (min-width: 768px) {
     .footer {
-        margin-top: 100px;
+        margin-top: 85px;
         padding-bottom: 100px;
     }
 
@@ -56,7 +56,7 @@ $grey:  #999999;
 
 @media screen and (min-width: 1200px) {
     .footer {
-        margin-top: 30px;
+        margin-top: 75px;
         padding-bottom: 26px;
     }
 

@@ -96,6 +96,10 @@ $green: #8eb059;
 }
 
 @media screen and (min-width: 1200px) {
+    .advantages.section {
+        margin-top: 202px;
+    }
+
     .advantages .container__inner {
         display: flex;
         flex-direction: row-reverse;
